@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>PWA Files</h1>
+    </header>
+
+    <pwa-files id="file" buttonString="Pick A File"></pwa-files>
+
+    <pwa-files id="dir" buttonString="Open A Directory" mode="directories"></pwa-files>
+
+    <button onclick="saveFile()">Save Current Opened File</button>
+
+    <script>
+      function saveFile() {
+        document.querySelector("#file").saveFile();
+      }
+    </script>
+
+    <script type="module">
+      import "../build/pwa-files.js";
+
+      document.querySelector("#file").addEventListener("file-opened", (ev) => {
+        console.log(ev);
+      });
+
+      document.querySelector("#dir").addEventListener("dir-opened", (ev) => {
+        console.log(ev);
+      });
+    </script>
+  </body>
+</html>
