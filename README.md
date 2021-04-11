@@ -22,13 +22,13 @@ There are two ways to use this component. For simple projects or just to get sta
 - Put this script tag in the head of your index.html:
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/pwafiles"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@lilpwa/pwafiles"></script>
 ```
 
 ### NPM
 
-- Run `npm install pwa-files`
-- import with `import 'pwa-files'`
+- Run `npm install @lilpwa/pwafiles`
+- import with `import '@lilpwa/pwafiles'`
 
 Then you can use the element `<pwa-files></pwa-files>` anywhere in your template, JSX, html etc.
 
