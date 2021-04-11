@@ -1,5 +1,8 @@
 # pwa-files
 
+Special thanks to https://github.com/GoogleChromeLabs/browser-fs-access as this web component makes heavy use
+of this package
+
 `pwa-files` is a [web component](https://meowni.ca/posts/web-components-with-otters/) from the [PWABuilder](https://pwabuilder.com) team that brings an awesome "install" experience to your Progressive Web App!
 
 _Built with [lit-element](https://lit-element.polymer-project.org/)_
