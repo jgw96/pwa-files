@@ -126,7 +126,7 @@ export class pwafiles extends LitElement implements PWAFilesComponent {
 
   render() {
     return html`
-      <button @click="${() => this.openFileOrDir()}">
+      <button part="innerbutton" @click="${() => this.openFileOrDir()}">
         ${this.buttonString}
       </button>
     `;
